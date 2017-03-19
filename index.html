@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script data-main="js/Main" src="js/require.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/template" id = "wrapper-template">
+        <div class="wrapper">
+            <h1>Simple To Do List</h1>
+            <ul class="item-list"></ul>
+            <div class="controlls">
+                <input class = "item-value" type="text" name="" value="" placeholder="Add new task" maxlength="14">
+                <button class="item-add"></button>
+            </div>
+        </div>
+
+    </script>
+    <script type="text/template" id = "list-template">
+        <% for (var i = 0; i < data.length; i++){ %>
+            <li class="list-item" data-value = "<%= data[i] %>"> <%= data[i] %>  </li>
+            <input class="edit-list" type="text" data-value = "<%= data[i] %>" value="<%= data[i] %>" maxlength="14">
+            <button class="delete-item" style="display : inline-block"></button>
+            <button class="edit-item" style="display : inline-block"></button>
+        <% }; %>
+
+</body>
+
+</html>

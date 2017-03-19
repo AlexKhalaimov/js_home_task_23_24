@@ -1,0 +1,96 @@
+body{
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 500px;
+}
+h1{
+    color: blue;
+}
+
+ul{
+    margin-top: 50px;
+    width: 170px;
+    height: auto;
+    background-color: #7ca8d8;
+    padding: 0 10px 0 10px;
+    overflow: auto;
+}
+.edit-list{
+    display: none;
+    width: 100px;
+    margin:  8px 0 8px 0px;
+    float: left;
+    width: 100px;
+    padding: 0;
+}
+
+.show_input{
+    display: list-item;
+    margin:  8px 0 8px 0px;
+    padding: 0;
+}
+
+.list-item{
+    margin:  10px 0 10px 0px;
+    list-style: none;
+    width: 100px;
+    float: left;
+    background-color: #96ffa0;
+}
+
+
+.edit-item{
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/edit.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    margin:  10px 0 10px 10px;
+}
+.delete-item{
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/delete.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    margin:  10px 0 10px 10px;
+}
+.item-add{
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/add.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+.done-item{
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/done.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    margin:  10px 0 10px 10px;
+}
+
+.controlls{
+    clear: both;
+    width: 180px;
+}
+.item-value{
+    width: 150px;
+
+}
