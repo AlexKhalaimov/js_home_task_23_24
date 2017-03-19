@@ -16,7 +16,7 @@ define(
 
 
             function editItem() {
-                var inp =  $(event.target).prev('button').prev('input');
+                var inp =  $(this).prev('button').prev('input');
                 var li = $(inp.prev('li'));
                 var myVal = inp.val();
                 index_myVal = model.data.indexOf(myVal);
