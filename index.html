@@ -27,7 +27,7 @@
         <% for (var i = 0; i < data.length; i++){ %>
             <li class="list-item" data-value = "<%= data[i] %>"> <%= data[i] %>  </li>
             <input class="edit-list" type="text" data-value = "<%= data[i] %>" value="<%= data[i] %>" maxlength="14">
-            <button class="delete-item" style="display : inline-block"></button>
+            <button class="delete-item" style="display : inline-block" data-value = "<%= data[i] %>"></button>
             <button class="edit-item" style="display : inline-block"></button>
         <% }; %>
 
